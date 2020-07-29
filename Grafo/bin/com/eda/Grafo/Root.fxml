@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.shape.Line?>
+
+<AnchorPane prefHeight="652.0" prefWidth="517.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.eda.Grafo.RootController">
+   <children>
+      <ImageView fitHeight="653.0" fitWidth="783.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Recursos/aeropuerto.jpeg" />
+         </image>
+      </ImageView>
+      <ImageView fx:id="aero_1" fitHeight="39.0" fitWidth="44.0" layoutX="292.0" layoutY="356.0" onMouseClicked="#interseccionOnMouseClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Recursos/icono.png" />
+         </image></ImageView>
+      <ImageView fx:id="aero_2" fitHeight="32.0" fitWidth="44.0" layoutX="311.0" layoutY="142.0" onMouseClicked="#sala1OnMouseClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Recursos/icono.png" />
+         </image></ImageView>
+      <ImageView fx:id="aero_3" fitHeight="32.0" fitWidth="44.0" layoutX="368.0" layoutY="196.0" onMouseClicked="#sala2OnMouseClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Recursos/icono.png" />
+         </image></ImageView>
+      <ImageView fx:id="aero_4" fitHeight="32.0" fitWidth="44.0" layoutX="214.0" layoutY="206.0" onMouseClicked="#sala3OnMouseClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Recursos/icono.png" />
+         </image></ImageView>
+      <ImageView fx:id="aero_5" fitHeight="32.0" fitWidth="44.0" layoutX="242.0" layoutY="303.0" onMouseClicked="#sala4OnMouseClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Recursos/icono.png" />
+         </image></ImageView>
+      <ImageView fx:id="aero_6" fitHeight="32.0" fitWidth="44.0" layoutX="345.0" layoutY="300.0" onMouseClicked="#sala5OnMouseClicked" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../Recursos/icono.png" />
+         </image>
+      </ImageView>
+      <Label layoutX="294.0" layoutY="407.0" style="-fx-background-color: BLACK;" text="SALA1" textFill="WHITE" textOverrun="CLIP" />
+      <Label layoutX="192.0" layoutY="310.0" style="-fx-background-color: BLACK;" text="SALA 5" textFill="WHITE" textOverrun="CLIP" />
+      <Label layoutX="390.0" layoutY="307.0" style="-fx-background-color: BLACK;" text="SALA 6" textFill="WHITE" textOverrun="CLIP" />
+      <Label layoutX="306.0" layoutY="115.0" style="-fx-background-color: BLACK;" text="SALA 2" textFill="WHITE" textOverrun="CLIP" />
+      <Label layoutX="409.0" layoutY="204.0" style="-fx-background-color: BLACK;" text="SALA 3" textFill="WHITE" textOverrun="CLIP" />
+      <Label layoutX="154.0" layoutY="204.0" style="-fx-background-color: BLACK;" text="SALA 4" textFill="WHITE" textOverrun="CLIP" />
+      <Line fx:id="linea4_5" endX="138.99996948242188" layoutX="119.0" layoutY="303.0" startX="111.39999389648438" startY="-72.60000610351562" />
+      <Line fx:id="linea2_4" endX="171.99996948242188" endY="-41.399993896484375" layoutX="72.0" layoutY="255.0" startX="243.19998168945312" startY="-94.19998168945312" />
+      <Line fx:id="linea2_3" endX="127.60000610351562" endY="51.20001220703125" layoutX="258.0" layoutY="160.0" startX="83.60000610351562" startY="2.399993896484375" />
+      <Line fx:id="linea2_6" endX="35.199981689453125" endY="44.800018310546875" layoutX="316.0" layoutY="264.0" startX="9.600006103515625" startY="-92.0" />
+      <Line fx:id="linea6_3" endX="-48.800018310546875" endY="-38.0" layoutX="428.0" layoutY="266.0" startX="-67.00003051757812" startY="34.0" />
+      <Line fx:id="linea1_6" endX="19.399993896484375" endY="-127.60000610351562" layoutX="331.0" layoutY="454.0" startX="-5.399993896484375" startY="-90.79998779296875" />
+      <Button fx:id="Ruta" layoutX="239.0" layoutY="510.0" mnemonicParsing="false" onMouseClicked="#generarRutaOnMouseClicked" prefHeight="31.0" prefWidth="145.0" style="-fx-background-color: green; -fx-background-radius: 10;" text="Generar Ruta" textFill="WHITE" />
+      <Button fx:id="limpiar" layoutX="238.0" layoutY="550.0" mnemonicParsing="false" onMouseClicked="#limpiarOnMouseClicked" prefHeight="32.0" prefWidth="146.0" style="-fx-background-color: Red; -fx-background-radius: 10;" text="Limpiar " textFill="WHITE" />
+      <Label layoutX="260.0" layoutY="338.0" />
+      <Label layoutX="363.0" layoutY="166.0" text="3" />
+      <Label layoutX="267.0" layoutY="175.0" text="10" />
+      <Label layoutX="311.0" layoutY="221.0" text="20" />
+      <Label layoutX="223.0" layoutY="264.0" text="12" />
+      <Label layoutX="376.0" layoutY="264.0" text="15" />
+      <Label layoutX="341.0" layoutY="347.0" style="-fx-background-color: WHITE;" text="5" />
+      <Line fx:id="linea5_6" endX="244.60000610351562" layoutX="101.0" layoutY="319.0" startX="170.19998168945312" />
+      <Label layoutX="302.0" layoutY="295.0" style="-fx-background-color: WHITE;" text="1" />
+   </children>
+</AnchorPane>
